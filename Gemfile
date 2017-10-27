@@ -29,9 +29,16 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :production do
+  gem 'rails_12factor'
+  gem 'pg', '~> 0.18'
+end
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails', '~> 4.3.1'
 gem 'paperclip', '~> 5.1'
+
+ruby '2.4.2'
